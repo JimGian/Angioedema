@@ -4,8 +4,10 @@ title = "Angioedema"
 theme = "ananke"
 publishDir = "docs"
 
-[menu]
+[params]
+  custom_css = ["css/custom.css"]
 
+[menu]
   [[menu.main]]
     identifier = "home"
     name = "Home"
@@ -13,7 +15,7 @@ publishDir = "docs"
     weight = 1
 
   [[menu.main]]
-    identifier = "Conditions"
+    identifier = "conditions"
     name = "Conditions"
-    url = "/Conditions/"
+    url = "/conditions/"
     weight = 2

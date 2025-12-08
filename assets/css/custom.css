@@ -1,0 +1,29 @@
+body {
+    background-color: #f9fafb;
+}
+
+h1, h2, h3 {
+    color: #1e88e5; /* calm blue */
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: 1px solid #1e88e5;
+}
+
+a:hover {
+    border-bottom-style: solid;
+    opacity: 0.8;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+}
+
+.site-footer {
+    background-color: #f3f4f6;
+    margin-top: 2rem;
+}

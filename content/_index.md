@@ -5,10 +5,18 @@ title = ''
 +++
 
 ---
-title: "Home"
+title: "Welcome"
 draft: false
 ---
 
-Welcome to **Angioedema**, a medical information resource for the general public.
+# Angioedema Information Center
 
-> This website provides general information and does **not** replace professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider with questions about your health.
+A clear, accessible resource created to help the general public understand **angioedema**, its causes, symptoms, and treatment options.
+
+> ⚠️ This website provides general information only and does **not** replace medical advice.
+
+## Explore the topics
+- [What is Angioedema?](/conditions/angioedema/)
+- [Symptoms](/conditions/symptoms/)
+- [Diagnosis](/conditions/diagnosis/)
+- [Treatment Options](/conditions/treatment/)
