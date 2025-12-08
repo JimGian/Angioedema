@@ -13,23 +13,27 @@ publishDir = "docs"
   [[menu.main]]
     identifier = "home"
     name = "Angioedema"
+    site_logo = "themes/ananke/static/images/nna.png"
     url = "/"
     weight = 1
 
   [[menu.main]]
     identifier = "conditions"
     name = "Articles"
+    site_logo = "themes/ananke/static/images/nna.png"
     url = "/conditions/"
     weight = 2
 
   [[menu.main]]
     identifier = "about"
     name = "About"
+    site_logo = "themes/ananke/static/images/nna.png"
     url = "/about/"
     weight = 3
 
   [[menu.main]]
     identifier = "contact"
     name = "Contact"
+    site_logo = "themes/ananke/static/images/nna.png"
     url = "/contact/"
     weight = 4
