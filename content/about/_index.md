@@ -1,5 +1,5 @@
 ---
-title: "About us"
+title: "About"
 featured_image: "/images/about.jpg"
 draft: false
 ---
