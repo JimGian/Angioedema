@@ -1,8 +1,11 @@
-baseURL = "https://github.com/JimGian/Angioedema"
+baseURL = "https://JimGian.github.io/Angioedema/"
 languageCode = "en-us"
 title = "Angioedema"
 theme = "ananke"
 publishDir = "docs"
+
+relativeURLs = true
+canonifyURLs = true
 
 [menu]
 
@@ -13,7 +16,7 @@ publishDir = "docs"
     weight = 1
 
   [[menu.main]]
-    identifier = "Conditions"
+    identifier = "conditions"
     name = "Conditions"
-    url = "/Conditions/"
+    url = "/conditions/"
     weight = 2
