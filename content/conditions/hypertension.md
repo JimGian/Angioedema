@@ -1,9 +1,3 @@
-+++
-date = '2025-12-08T12:28:51+02:00'
-draft = false
-title = 'Hypertension'
-+++
-
 ---
 title: "Hypertension (High Blood Pressure)"
 draft: false
