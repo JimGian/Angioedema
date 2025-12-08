@@ -1,5 +1,6 @@
 ---
 title: "Articles"
+featured_image: "/images/articles.jpg"
 draft: false
 ---
 

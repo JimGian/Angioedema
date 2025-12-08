@@ -1,6 +1,6 @@
 baseURL = "https://JimGian.github.io/Angioedema/"
 languageCode = "en-us"
-title = "Angioedema"
+title = "Home"
 theme = "ananke"
 publishDir = "docs"
 
