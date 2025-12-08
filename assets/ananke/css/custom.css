@@ -1,43 +1,103 @@
+/* ========== Global ========== */
 body {
     background-color: #f9fafb;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.7;
+    color: #333;
 }
 
-/* Main content area */
+/* Smooth spacing for all sections */
+section {
+    margin-bottom: 2rem;
+}
+
+/* Limit super-wide screens */
+@media (min-width: 1200px) {
+    main {
+        max-width: 850px;
+    }
+}
+
+/* ========== Main Content Layout ========== */
 main {
     max-width: 900px;
     margin: 0 auto;
     padding: 1.5rem 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
 }
 
-/* Headings in a calm medical blue */
+/* ========== Headings ========== */
 h1, h2, h3 {
-    color: #1e88e5;
+    color: #1976d2; /* Slightly deeper, more professional blue */
     font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
 }
 
-/* Links */
+h1 {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+/* Underline heading separators for medical clarity */
+h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #1976d2;
+    margin-top: 0.4rem;
+    margin-bottom: 1.2rem;
+    border-radius: 2px;
+}
+
+/* ========== Links ========== */
 a {
     text-decoration: none;
-    border-bottom: 1px solid #1e88e5;
+    border-bottom: 1px solid #1976d2;
+    color: #1976d2;
+    transition: opacity 0.2s ease;
 }
 
 a:hover {
-    opacity: 0.85;
+    opacity: 0.75;
 }
 
-/* Blockquote for the warning */
+/* ========== Lists ========== */
+ul {
+    padding-left: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+/* ========== Blockquotes (Warnings, notes) ========== */
 blockquote {
-    border-left: 4px solid #ffb300;
-    padding-left: 0.75rem;
+    border-left: 4px solid #ff9800;
+    padding-left: 1rem;
+    margin-left: 0;
     color: #555;
+    background-color: #fff3e0;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    margin-bottom: 1.2rem;
 }
 
-/* Footer if you add one later */
+/* ========== Footer ========== */
 .site-footer {
     background-color: #f3f4f6;
-    margin-top: 2rem;
     padding: 1.5rem 0;
     font-size: 0.9rem;
-    color: #666;
+    color: #555;
     text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid #e0e0e0;
 }
