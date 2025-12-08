@@ -4,9 +4,6 @@ title = "Angioedema"
 theme = "ananke"
 publishDir = "docs"
 
-relativeURLs = true
-canonifyURLs = true
-
 [menu]
 
   [[menu.main]]
@@ -16,7 +13,7 @@ canonifyURLs = true
     weight = 1
 
   [[menu.main]]
-    identifier = "conditions"
+    identifier = "Conditions"
     name = "Conditions"
-    url = "/conditions/"
+    url = "/Conditions/"
     weight = 2
