@@ -10,7 +10,7 @@ A clear, accessible resource created to help the general public understand **ang
 > ⚠️ This website provides general information only and does **not** replace medical advice.
 
 ## Explore the topics
-- [What is Angioedema?](/conditions/angioedema/)
-- [Symptoms](/conditions/symptoms/)
-- [Diagnosis](/conditions/diagnosis/)
-- [Treatment Options](/conditions/treatment/)
+- [What is Angioedema?](/conditions/angioedema.md)
+- [Symptoms](/conditions/symptoms.md)
+- [Diagnosis](/conditions/diagnosis.md)
+- [Treatment Options](/conditions/treatment.md)
