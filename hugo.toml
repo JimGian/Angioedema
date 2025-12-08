@@ -6,7 +6,7 @@ publishDir = "docs"
 
 [params]
   custom_css = ["custom.css"]
-  site_logo = "themes/ananke/images/gohugo-default-sample-hero-image.jpg"
+  site_logo = "themes/ananke/static/images/nna.png"
   text_color = "green"
 
 [menu]
