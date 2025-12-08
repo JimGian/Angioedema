@@ -3,7 +3,7 @@ title: "Symptoms"
 draft: false
 ---
 
-## Symptoms
+### Symptoms 
 
 - Often no symptoms (it can be "silent")
 - Headaches

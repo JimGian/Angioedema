@@ -5,7 +5,6 @@ theme = "ananke"
 publishDir = "docs"
 
 [params]
-  show_recent_posts = false
   custom_css = ["css/custom.css"]
 
 [menu]
