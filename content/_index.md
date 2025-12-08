@@ -1,6 +1,6 @@
 ---
-title: "Angioedema catchphrase here"
-featured_image: "/images/nna1.png"
+title: "Angioedema: dive deeper"
+featured_image: "/images/angio.png"
 draft: false
 ---
 
