@@ -17,3 +17,6 @@ publishDir = "docs"
     name = "Conditions"
     url = "/Conditions/"
     weight = 2
+
+relativeURLs = true
+canonifyURLs = true
