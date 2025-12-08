@@ -5,8 +5,8 @@ theme = "ananke"
 publishDir = "docs"
 
 [params]
+  show_recent_posts = false
   custom_css = ["css/custom.css"]
-  description = "Educational website providing clear, accessible information about angioedema for the general public."
 
 [menu]
   [[menu.main]]
