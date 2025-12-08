@@ -1,6 +1,6 @@
 ---
 title: "Angioedema: dive deeper"
-featured_image: "/images/angio.png"
+featured_image: "/images/angio.jpg"
 draft: false
 ---
 
