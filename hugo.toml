@@ -6,7 +6,7 @@ publishDir = "docs"
 
 [params]
   custom_css = ["custom.css"]
-  site_logo = "img/nna.png"
+  site_logo = "'/images/gohugo-default-sample-hero-image.jpg'"
   text_color = "blue"
 
 [menu]
