@@ -1,11 +1,8 @@
-baseURL = "https://jimgian.github.io/Angioedema/"
+baseURL = "https://github.com/JimGian/Angioedema"
 languageCode = "en-us"
 title = "Angioedema"
 theme = "ananke"
 publishDir = "docs"
-
-relativeURLs = true
-canonifyURLs = true
 
 [menu]
 
@@ -19,10 +16,4 @@ canonifyURLs = true
     identifier = "Conditions"
     name = "Conditions"
     url = "/Conditions/"
-<<<<<<< HEAD
     weight = 2
-=======
-    weight = 2
-
-
->>>>>>> 3402f0cfdb38799b5d49ab1857c8bbe94ac5c4a7
