@@ -1,3 +1,8 @@
+---
+title: "Symptoms"
+draft: false
+---
+
 ## Symptoms
 
 - Often no symptoms (it can be "silent")

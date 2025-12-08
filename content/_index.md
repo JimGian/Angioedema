@@ -10,7 +10,12 @@ A clear, accessible resource created to help the general public understand **ang
 > ⚠️ This website provides general information only and does **not** replace medical advice.
 
 ## Explore the topics
-- [What is Angioedema?](https://JimGian.github.io/Angioedema/conditions/angioedema.md)
-- [Symptoms](https://JimGian.github.io/Angioedema/conditions/symptoms.md)
-- [Diagnosis](https://JimGian.github.io/Angioedema/conditions/diagnosis.md)
-- [Treatment Options](https://JimGian.github.io/Angioedema/conditions/treatment.md)
+
+- [What is Angioedema?](conditions/angioedema/)
+# 1
+- [Symptoms](conditions/symptoms/)
+# 2
+- [Diagnosis](conditions/diagnosis/)
+# 3
+- [Treatment Options](conditions/treatment/)
+
