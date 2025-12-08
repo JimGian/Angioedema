@@ -1,6 +1,6 @@
 ---
 title: "Home"
-featured_image: "themes/ananke/static/images/nna.png"
+featured_image: "/images/nna1.png"
 draft: false
 ---
 
