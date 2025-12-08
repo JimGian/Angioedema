@@ -12,12 +12,12 @@ publishDir = "docs"
 [menu]
   [[menu.main]]
     identifier = "home"
-    name = "Home"
+    name = "Angioedema"
     url = "/"
     weight = 1
 
   [[menu.main]]
     identifier = "conditions"
-    name = "Conditions"
+    name = "Articles"
     url = "/conditions/"
     weight = 2

@@ -1,9 +1,9 @@
 /* ========== Global ========== */
 body {
-    background-color: #f9fafb;
+    background-color: #f3f5f9;
     font-family: "Helvetica Neue", Arial, sans-serif;
     line-height: 1.7;
-    color: #333;
+    color: #222;
 }
 
 /* Smooth spacing for all sections */
@@ -21,28 +21,28 @@ section {
 /* ========== Main Content Layout ========== */
 main {
     max-width: 900px;
-    margin: 0 auto;
-    padding: 1.5rem 1rem;
+    margin: 2rem auto;
+    padding: 2rem 1.75rem;
     background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
 }
 
 /* ========== Headings ========== */
 h1, h2, h3 {
-    color: #1976d2; /* Slightly deeper, more professional blue */
+    color: #1565c0; /* calm, clinical blue */
     font-weight: 600;
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.1rem;
     margin-top: 0.5rem;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 h3 {
@@ -53,9 +53,9 @@ h3 {
 h2::after {
     content: "";
     display: block;
-    width: 50px;
+    width: 56px;
     height: 3px;
-    background: #1976d2;
+    background: #1565c0;
     margin-top: 0.4rem;
     margin-bottom: 1.2rem;
     border-radius: 2px;
@@ -64,13 +64,14 @@ h2::after {
 /* ========== Links ========== */
 a {
     text-decoration: none;
-    border-bottom: 1px solid #1976d2;
-    color: #1976d2;
-    transition: opacity 0.2s ease;
+    border-bottom: 1px solid #1565c0;
+    color: #1565c0;
+    transition: opacity 0.2s ease, border-color 0.2s ease;
 }
 
 a:hover {
-    opacity: 0.75;
+    opacity: 0.8;
+    border-color: #0d47a1;
 }
 
 /* ========== Lists ========== */
@@ -81,23 +82,28 @@ ul {
 
 /* ========== Blockquotes (Warnings, notes) ========== */
 blockquote {
-    border-left: 4px solid #ff9800;
+    border-left: 4px solid #ffb300;
     padding-left: 1rem;
     margin-left: 0;
-    color: #555;
-    background-color: #fff3e0;
+    color: #444;
+    background-color: #fff8e1;
     padding: 0.75rem 1rem;
-    border-radius: 4px;
+    border-radius: 6px;
     margin-bottom: 1.2rem;
+}
+
+/* Make strong/emphasis inside blockquotes stand out */
+blockquote strong {
+    color: #c62828;
 }
 
 /* ========== Footer ========== */
 .site-footer {
-    background-color: #f3f4f6;
+    background-color: #e3f2fd;
     padding: 1.5rem 0;
     font-size: 0.9rem;
-    color: #555;
+    color: #455a64;
     text-align: center;
     margin-top: 2rem;
-    border-top: 1px solid #e0e0e0;
+    border-top: 1px solid #bbdefb;
 }
