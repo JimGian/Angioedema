@@ -14,11 +14,14 @@ A clear, accessible resource created to help the general public understand angio
 
 ## Explore the topics
 
-<div class="explore-nav">
-  <a href="/conditions/angioedema/">• What is Angioedema?</a>
-  <a href="/conditions/symptoms/">• Symptoms</a>
-  <a href="/conditions/diagnosis/">• Diagnosis</a>
-  <a href="/conditions/treatment/">• Treatment Options</a>
-</div>
+## Explore the topics
+
+<ul class="explore-bullets">
+  <li><a href="/conditions/angioedema/">What is Angioedema?</a></li>
+  <li><a href="/conditions/symptoms/">Symptoms</a></li>
+  <li><a href="/conditions/diagnosis/">Diagnosis</a></li>
+  <li><a href="/conditions/treatment/">Treatment Options</a></li>
+</ul>
+
 
 

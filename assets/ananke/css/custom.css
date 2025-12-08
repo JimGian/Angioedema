@@ -154,9 +154,13 @@ blockquote strong {
     border-color: #bbdefb;
 }
 
-.explore-nav a {
-    display: block;
-    padding: 4px 0;
-    line-height: 1.2;
-    border-bottom: none !important;
+/* ========== Explore the topics bullets ========== */
+.explore-bullets li {
+    margin-bottom: 0.25rem !important; /* reduce vertical spacing */
+    line-height: 1.3;                  /* tighter line height */
+    padding-left: 0.2rem;              /* small indent */
+}
+
+.explore-bullets {
+    margin-left: 1.2rem;               /* ensures bullets line up nicely */
 }
