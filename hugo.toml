@@ -5,7 +5,9 @@ theme = "ananke"
 publishDir = "docs"
 
 [params]
-  custom_css = ["css/custom.css"]
+  custom_css = ["custom.css"]
+  site_logo = "img/logo.svg"
+  text_color = "blue"
 
 [menu]
   [[menu.main]]
