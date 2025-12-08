@@ -3,5 +3,9 @@ title: "Conditions"
 draft: false
 ---
 
-Here you can find information about conditions related to **angioedema**.
-Choose a topic below to learn more.
+Learn more about angioedema and related topics:
+
+- [What is angioedema?](/conditions/angioedema/)
+- [Symptoms & warning signs](/conditions/symptoms/)
+- [Diagnosis](/conditions/diagnosis/)
+- [Treatment options](/conditions/treatment/)

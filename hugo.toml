@@ -6,6 +6,7 @@ publishDir = "docs"
 
 [params]
   custom_css = ["css/custom.css"]
+  description = "Educational website providing clear, accessible information about angioedema for the general public."
 
 [menu]
   [[menu.main]]

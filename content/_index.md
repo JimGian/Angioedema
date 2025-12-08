@@ -1,9 +1,3 @@
-+++
-date = '2025-12-08T12:28:40+02:00'
-draft = false
-title = ''
-+++
-
 ---
 title: "Welcome"
 draft: false

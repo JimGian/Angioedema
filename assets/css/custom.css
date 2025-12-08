@@ -3,18 +3,8 @@ body {
 }
 
 h1, h2, h3 {
-    color: #1e88e5; /* calm blue */
+    color: #1e88e5; /* calm medical blue */
     font-weight: 600;
-}
-
-a {
-    text-decoration: none;
-    border-bottom: 1px solid #1e88e5;
-}
-
-a:hover {
-    border-bottom-style: solid;
-    opacity: 0.8;
 }
 
 main {
@@ -23,7 +13,20 @@ main {
     padding: 1.5rem 1rem;
 }
 
+a {
+    text-decoration: none;
+    border-bottom: 1px solid #1e88e5;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
 .site-footer {
     background-color: #f3f4f6;
     margin-top: 2rem;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
 }
