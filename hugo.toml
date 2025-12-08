@@ -1,8 +1,11 @@
-baseURL = "https://github.com/JimGian/Angioedema"
+baseURL = "https://jimgian.github.io/Angioedema/"
 languageCode = "en-us"
 title = "Angioedema"
 theme = "ananke"
 publishDir = "docs"
+
+relativeURLs = true
+canonifyURLs = true
 
 [menu]
 
