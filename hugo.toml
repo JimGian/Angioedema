@@ -19,4 +19,10 @@ canonifyURLs = true
     identifier = "Conditions"
     name = "Conditions"
     url = "/Conditions/"
+<<<<<<< HEAD
     weight = 2
+=======
+    weight = 2
+
+
+>>>>>>> 3402f0cfdb38799b5d49ab1857c8bbe94ac5c4a7
