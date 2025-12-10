@@ -8,15 +8,11 @@ theme = "ananke"
   site_logo = "themes/ananke/static/images/nna.png"
   text_color = "black"
 
-  [params.hero]
-    heading = "Understanding Angioedema"
-    text = "Explore clear, evidence-based explanations of the different types of angioedema — symptoms, diagnosis, and treatment."
-    button_text = "Explore Conditions"
-    button_url = "/conditions/"
-    background_image = "images/hero-bg.jpg" # place this image in /static/images/
-
-  description = "Medical information and guidance about angioedema, including histaminergic, bradykinin-mediated, and idiopathic forms."
-  author = "Dr. Jim Gian"
+[params.hero]
+  heading = "Welcome to Angioedema Info"
+  text = "Learn about the causes, symptoms, and treatments of various forms of angioedema."
+  button_text = "Explore Conditions"
+  button_url = "/conditions/"
 
 [menu]
   [[menu.main]]
@@ -46,3 +42,32 @@ theme = "ananke"
     site_logo = "themes/ananke/static/images/nna.png"
     url = "/contact/"
     weight = 4
+
+
+[[params.social]]
+  name = "github"
+  url = "https://github.com/YourUsername"
+
+[[params.social]]
+  name = "linkedin"
+  url = "https://linkedin.com/in/yourprofile"
+
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+  [markup.highlight]
+    style = "dracula"  
+    noClasses = false
+
+[deployment]
+  [[deployment.targets]]
+    name = "production"
+    URL = "s3://my-bucket-name?region=us-west-2"
