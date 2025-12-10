@@ -1,155 +1,175 @@
-/* ========== Global ========== */
+/* ========== Reset & Base ========== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%; /* 16px by default */
+}
+
 body {
-    background-color: #f3f5f9;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.7;
-    color: #222;
+  background-color: #f7f9fc;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Smooth spacing for all sections */
-section {
-    margin-bottom: 2rem;
-}
-
-/* Limit super-wide screens */
-@media (min-width: 1200px) {
-    main {
-        max-width: 850px;
-    }
-}
-
-/* ========== Main Content Layout ========== */
+/* ========== Layout Wrapper ========== */
 main {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 2rem 1.75rem;
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+  max-width: 820px;
+  margin: 3rem auto;
+  padding: 2rem 1.5rem;
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
 }
 
-/* ========== Headings ========== */
-h1, h2, h3 {
-    color: #1565c0; /* calm, clinical blue */
-    font-weight: 600;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
+/* For wider screens: center + limit width */
+@media (min-width: 1200px) {
+  main {
+    max-width: 780px;
+    padding: 2.5rem 2rem;
+  }
 }
 
-h1 {
-    font-size: 2.1rem;
-    margin-top: 0.5rem;
+/* ========== Headings & Typography ========== */
+h1, h2, h3, h4, h5, h6 {
+  color: #1a4f9c;
+  line-height: 1.25;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
 }
 
-h2 {
-    font-size: 1.6rem;
-}
+h1 { font-size: clamp(2rem, 5vw, 2.6rem); margin-top: 1rem; }
+h2 { font-size: clamp(1.5rem, 4vw, 2.1rem); }
+h3 { font-size: 1.35rem; }
+h4 { font-size: 1.15rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: 0.9rem; }
 
-h3 {
-    font-size: 1.25rem;
-}
-
-/* Underline heading separators for medical clarity */
 h2::after {
-    content: "";
-    display: block;
-    width: 56px;
-    height: 3px;
-    background: #1565c0;
-    margin-top: 0.4rem;
-    margin-bottom: 1.2rem;
-    border-radius: 2px;
+  content: "";
+  display: block;
+  width: 48px;
+  height: 4px;
+  background: #1a4f9c;
+  margin-top: 0.4rem;
+  margin-bottom: 1.4rem;
+  border-radius: 2px;
+}
+
+/* Paragraphs & textual content */
+p {
+  margin-bottom: 1.25rem;
+  color: #333333;
+  font-size: 1rem;
+}
+
+ul, ol {
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+  color: #333333;
+}
+
+li + li {
+  margin-top: 0.6rem;
 }
 
 /* ========== Links ========== */
 a {
-    text-decoration: none;
-    border-bottom: 1px solid #1565c0;
-    color: #1565c0;
-    transition: opacity 0.2s ease, border-color 0.2s ease;
+  color: #1a4f9c;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  transition: border-color 0.2s ease, color 0.2s ease;
 }
 
 a:hover {
-    opacity: 0.8;
-    border-color: #0d47a1;
+  color: #163c7a;
+  border-color: #163c7a;
+  opacity: 0.9;
 }
 
-/* ========== Lists ========== */
-ul {
-    padding-left: 1.2rem;
-    margin-top: 0.5rem;
-}
-
-/* ========== Blockquotes (Warnings, notes) ========== */
+/* ========== Blockquotes, Notes & Alerts ========== */
 blockquote {
-    border-left: 4px solid #ffb300;
-    padding-left: 1rem;
-    margin-left: 0;
-    color: #444;
-    background-color: #fff8e1;
-    padding: 0.75rem 1rem;
-    border-radius: 6px;
-    margin-bottom: 1.2rem;
+  border-left: 4px solid #f0ad4e;
+  background-color: #fff9f2;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.8rem;
+  color: #444444;
+  border-radius: 8px;
 }
 
-/* Make strong/emphasis inside blockquotes stand out */
 blockquote strong {
-    color: #c62828;
+  color: #b71c1c;
+}
+
+/* ========== Condition Cards / Grid of Cards ========== */
+.condition-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.6rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 720px) {
+  .condition-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.condition-card {
+  display: block;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.6rem 1.8rem;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.condition-card h2 {
+  margin: 0 0 0.6rem 0;
+  font-size: 1.25rem;
+  color: #1a4f9c;
+}
+
+.condition-card p {
+  margin: 0;
+  font-size: 0.97rem;
+  color: #444444;
+  line-height: 1.5;
+}
+
+.condition-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.12);
+  border-color: #cbd5e1;
 }
 
 /* ========== Footer ========== */
 .site-footer {
-    background-color: #e3f2fd;
-    padding: 1.5rem 0;
-    font-size: 0.9rem;
-    color: #455a64;
-    text-align: center;
-    margin-top: 2rem;
-    border-top: 1px solid #bbdefb;
+  background-color: #e9f4fd;
+  padding: 2rem 0;
+  font-size: 0.88rem;
+  color: #546e7a;
+  text-align: center;
+  margin-top: 3rem;
+  border-top: 1px solid #d0e5f8;
 }
 
-/* ========== Conditions grid ========== */
-
-.condition-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
-    margin-top: 1.5rem;
-}
-
-@media (min-width: 700px) {
-    .condition-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-.condition-card {
-    display: block;
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 1.2rem 1.4rem;
-    box-shadow: 0 2px 10px rgba(15, 23, 42, 0.06);
-    border: 1px solid #e3eaf2;
-    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
-    text-decoration: none;
-    border-bottom: none; /* cancel global a{} underline */
-}
-
-.condition-card h2 {
-    margin-top: 0;
-    margin-bottom: 0.4rem;
-    font-size: 1.2rem;
-    color: #1565c0;
-}
-
-.condition-card p {
-    margin: 0;
-    font-size: 0.95rem;
-    color: #444;
-}
-
-.condition-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.12);
-    border-color: #bbdefb;
+/* ========== Utility / Small tweaks ========== */
+/* Make images responsive if any */
+img {
+  max-width: 100%;
+  display: block;
 }

@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://JimGian.github.io/sitemap.xml
