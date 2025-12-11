@@ -173,3 +173,34 @@ img {
   max-width: 100%;
   display: block;
 }
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+@media (min-width: 640px) {
+  .topics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.topics-grid a {
+  display: block;
+  padding: 1.2rem 1.5rem;
+  background-color: #f8f9fb;
+  border: 1px solid #dde4ed;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #1a4f9c;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+.topics-grid a:hover {
+  background-color: #e3f2fd;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+}
