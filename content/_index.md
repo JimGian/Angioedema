@@ -14,21 +14,15 @@ A clear, accessible resource created to help the general public understand **ang
 
 ## 🧭 Explore the Topics
 
+## Explore the topics
+
 <div class="topics-grid">
-
-[🧬 **What is Angioedema?**](/conditions/angioedema/)  
-Understand the basics and underlying mechanisms.
-
-[📋 **Symptoms**](/conditions/symptoms/)  
-Recognize the signs and when to seek help.
-
-[🔬 **Diagnosis**](/conditions/diagnosis/)  
-Learn how doctors identify different types.
-
-[💊 **Treatment Options**](/conditions/treatment/)  
-Explore medical and lifestyle approaches.
-
+  <a href="/conditions/angioedema/">🧬 What is Angioedema?</a>
+  <a href="/conditions/symptoms/">📋 Symptoms</a>
+  <a href="/conditions/diagnosis/">🔬 Diagnosis</a>
+  <a href="/conditions/treatment/">💊 Treatment Options</a>
 </div>
+
 
 ---
 
