@@ -15,7 +15,7 @@ body {
   font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.7;
-  color: #222;
+  color: #1a4f9c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding-bottom: 4rem;
@@ -25,6 +25,7 @@ main {
   max-width: 860px;
   margin: 3rem auto;
   padding: 2rem 1.5rem;
+  padding-top: 1.5rem;  
   background-color: #ffffff;
   border-radius: 14px;
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
@@ -45,6 +46,16 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.75rem;
   font-weight: 600;
 }
+
+h1.page-title {
+  text-align: center;
+  margin-top: 1rem;       /* Move it closer to top */
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #1a4f9c;
+}
+
+
 
 h1 { font-size: clamp(2.2rem, 5vw, 2.8rem); }
 h2 { font-size: clamp(1.6rem, 4vw, 2.2rem); }
@@ -209,12 +220,15 @@ blockquote strong {
 }
 
 .hero {
-  background: url('/images/angio.jpg') center/cover no-repeat;
+  background: url('/images/angio.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px;
   padding: 4rem 2rem;
   color: white;
   text-align: center;
   border-radius: 12px;
-  margin-bottom: 2rem;
 }
 
 .hero h1 {
@@ -224,7 +238,8 @@ blockquote strong {
 
 .hero p {
   font-size: 1.2rem;
-  margin-bottom: 1.5rem;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .hero .btn {
@@ -241,10 +256,50 @@ blockquote strong {
   background: #e3f2fd;
 }
 
+.hero-banner {
+  background: url('/images/wall.jpg') center/cover no-repeat;
+  padding: 6rem 2rem;
+  text-align: center;
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
 .topics-grid {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 1.5rem;
-  margin: 1rem 0 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
 }
 
 @media (min-width: 640px) {
@@ -255,18 +310,28 @@ blockquote strong {
 
 .topics-grid a {
   display: block;
-  padding: 1.2rem;
-  background: #f8f9fb;
-  border: 1px solid #d3e1ef;
+  background: #f7f9fc;
+  padding: 1.5rem;
   border-radius: 12px;
   text-decoration: none;
-  color: #1a4f9c;
-  transition: all 0.2s ease;
+  color: #1565c0;
+  font-weight: 500;
+  border: 1px solid #dbe5f1;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: all 0.25s ease;
 }
 
 .topics-grid a:hover {
   background: #e3f2fd;
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.light-section {
+  background: #f1f6fb;
+  padding: 3rem 1rem;
+  border-radius: 12px;
+  margin: 3rem 0;
 }
 
 

@@ -1,6 +1,6 @@
 ---
 title: "About"
-featured_image: "/images/about.jpg"
+featured_image: "/images/aboutus.jpg"
 draft: false
 ---
 
