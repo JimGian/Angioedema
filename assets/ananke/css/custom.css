@@ -120,6 +120,168 @@ blockquote strong {
   color: #b71c1c;
 }
 
+.contact-hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: url('/images/contactus.jpg') center/cover no-repeat;
+  border-radius: 12px;
+  color: white;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.contact-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  z-index: 1;
+}
+
+.contact-hero h1,
+.contact-hero p {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.contact-hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-info-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+@media (min-width: 700px) {
+  .contact-info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.contact-info-grid h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #1565c0;
+}
+
+.contact-info-grid a {
+  color: #1565c0;
+  text-decoration: underline;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  width: 100%;
+}
+
+.contact-form button {
+  background: #1565c0;
+  color: white;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.contact-form button:hover {
+  background: #0d47a1;
+}
+
+.about-hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: url('/images/aboutus.jpg') center/cover no-repeat;
+  border-radius: 12px;
+  color: white;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.about-hero h1,
+.about-hero p {
+  position: relative;
+  z-index: 2;
+}
+
+.about-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #f1f1f1;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.about-content h2 {
+  font-size: 1.6rem;
+  color: #1a4f9c;
+  margin-top: 2rem;
+}
+
+.about-content p {
+  font-size: 1.05rem;
+  color: #333;
+  margin-top: 0.5rem;
+  line-height: 1.8;
+}
+
+.quote-card {
+  background: #f1f6fb;
+  border-left: 4px solid #1565c0;
+  margin: 3rem auto;
+  padding: 1.5rem;
+  max-width: 700px;
+  border-radius: 8px;
+  font-style: italic;
+  text-align: center;
+  color: #1a237e;
+}
+
+
 /* CONDITION CARDS */
 .condition-grid {
   display: grid;
@@ -341,3 +503,4 @@ img {
   display: block;
   border-radius: 8px;
 }
+
