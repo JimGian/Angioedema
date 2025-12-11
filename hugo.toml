@@ -1,48 +1,42 @@
 baseURL = "https://JimGian.github.io/Angioedema/"
 languageCode = "en-us"
-title = "Home"
-theme = "ananke" 
+title = "Angioedema Info"
+theme = "ananke"
 
 [params]
-  custom_css = ["custom.css"]
-  site_logo = "themes/ananke/static/images/nna.png"
+  custom_css = ["css/custom.css"]
+  site_logo = "images/nna.png"
   text_color = "black"
 
-[params.hero]
-  heading = "Welcome to Angioedema Info"
-  text = "Learn about the causes, symptoms, and treatments of various forms of angioedema."
-  button_text = "Explore Conditions"
-  button_url = "/conditions/"
+  [params.hero]
+    heading = "Welcome to Angioedema Info"
+    text = "Learn about the causes, symptoms, and treatments of various forms of angioedema."
+    button_text = "Explore Conditions"
+    button_url = "/conditions/"
 
-[menu]
-  [[menu.main]]
-    identifier = "home"
-    name = "Angioedema"
-    site_logo = "themes/ananke/static/images/nna.png"
-    url = "/"
-    weight = 1
+[[menu.main]]
+  identifier = "home"
+  name = "Angioedema"
+  url = "/"
+  weight = 1
 
-  [[menu.main]]
-    identifier = "conditions"
-    name = "Articles"
-    site_logo = "themes/ananke/static/images/nna.png"
-    url = "/conditions/"
-    weight = 2
+[[menu.main]]
+  identifier = "conditions"
+  name = "Articles"
+  url = "/conditions/"
+  weight = 2
 
-  [[menu.main]]
-    identifier = "about"
-    name = "About us"
-    site_logo = "themes/ananke/static/images/nna.png"
-    url = "/about/"
-    weight = 3
+[[menu.main]]
+  identifier = "about"
+  name = "About us"
+  url = "/about/"
+  weight = 3
 
-  [[menu.main]]
-    identifier = "contact"
-    name = "Contact"
-    site_logo = "themes/ananke/static/images/nna.png"
-    url = "/contact/"
-    weight = 4
-
+[[menu.main]]
+  identifier = "contact"
+  name = "Contact"
+  url = "/contact/"
+  weight = 4
 
 [[params.social]]
   name = "github"
@@ -52,11 +46,9 @@ theme = "ananke"
   name = "linkedin"
   url = "https://linkedin.com/in/yourprofile"
 
-
 [taxonomies]
   tag = "tags"
   category = "categories"
-
 
 [markup]
   [markup.goldmark]
@@ -64,7 +56,7 @@ theme = "ananke"
       unsafe = true
 
   [markup.highlight]
-    style = "dracula"  
+    style = "dracula"
     noClasses = false
 
 [deployment]
