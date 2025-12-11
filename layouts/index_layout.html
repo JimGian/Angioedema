@@ -1,5 +1,31 @@
 {{ define "main" }}
-  <main class="pa3 pa4-l center measure-wide lh-copy">
-    {{ .Content }}
+  <div class="hero">
+    <h1>{{ .Site.Params.hero.heading }}</h1>
+    <p>{{ .Site.Params.hero.text }}</p>
+    <a class="btn" href="{{ .Site.Params.hero.button_url }}"> {{ .Site.Params.hero.button_text }} </a>
+  </div>
+
+  <main>
+    <section>
+      <h2>Explore the Topics</h2>
+      <div class="topics-grid">
+        <a href="/conditions/angioedema/">🧬 <strong>What is Angioedema?</strong><br>Understanding the condition</a>
+        <a href="/conditions/symptoms/">📋 <strong>Symptoms</strong><br>How it appears</a>
+        <a href="/conditions/diagnosis/">🔬 <strong>Diagnosis</strong><br>Medical tests and evaluations</a>
+        <a href="/conditions/treatment/">💊 <strong>Treatment</strong><br>Options available</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Recent Articles</h2>
+      <ul>
+        {{ range first 5 (where .Site.RegularPages "Type" "in" site.Params.mainSections) }}
+          <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a><br>
+            <small>{{ .Date.Format "January 2, 2006" }}</small>
+          </li>
+        {{ end }}
+      </ul>
+    </section>
   </main>
 {{ end }}
