@@ -8,13 +8,6 @@ theme = "ananke"
   site_logo = "images/nna.png"
   text_color = "black"
 
-[params.hero]
-  heading = "Welcome to Angioedema Info"
-  text = "Learn about the causes, symptoms, and treatments of various forms of angioedema."
-  button_text = "Explore Conditions"
-  button_url = "/conditions/"
-
-
 [[menu.main]]
   identifier = "home"
   name = "Angioedema"
