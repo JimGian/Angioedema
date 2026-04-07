@@ -7,27 +7,42 @@ draft: false
 
 Angioedema is a swelling of the deeper layers of the skin, often affecting the face, lips, tongue, throat, hands, feet, or genitals. It may occur suddenly and can be potentially serious if it affects breathing.
 
-## Causes
+<details class="interactive-detail">
+<summary>🔍 Click to learn more about Causes</summary>
+
+### Causes
 
 - Allergic reactions (foods, medications, insect stings)
 - Non-allergic drug reactions (for example, ACE inhibitors)
 - Hereditary angioedema (genetic forms)
 - Idiopathic (no clear cause)
 
-## Symptoms
+</details>
+
+<details class="interactive-detail">
+<summary>📋 Click to see Symptoms</summary>
+
+### Symptoms
 
 - Sudden swelling under the skin
 - Swelling of lips, eyelids, tongue, or throat
 - Pain or discomfort in the swollen area
 - Sometimes hives (urticaria) on the skin
 
-## When to seek emergency care
+</details>
+
+<details class="interactive-detail">
+<summary>🚨 Click for Emergency Care Information</summary>
+
+### When to seek emergency care
 
 Call emergency services or go to the nearest hospital if you have:
 - Difficulty breathing
 - Swelling of tongue or throat
 - Trouble swallowing
 - Feeling of tightness in the chest or throat
+
+</details>
 
 ## Disclaimer
 

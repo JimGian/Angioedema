@@ -4,31 +4,30 @@ featured_image: "/images/articles2.png"
 draft: false
 ---
 
-## Articles
+## Angioedema guides
 
-Below you can find information about angioedema and related topics.  
-Click on a card to learn more.
+Choose a topic to learn more. Each page is designed to be fast, clear, and easy to read.
 
 <div class="condition-grid">
 
-  <a class="condition-card" href="/Angioedema/conditions/angioedema/">
+  <a class="condition-card" href="/conditions/angioedema/">
     <h2>What is Angioedema?</h2>
-    <p>Basic explanation of what angioedema is, common causes and types.</p>
+    <p>Simple definition, causes, and the most important symptoms to watch for.</p>
   </a>
 
-  <a class="condition-card" href="/Angioedema/conditions/symptoms/">
+  <a class="condition-card" href="/conditions/symptoms/">
     <h2>Symptoms</h2>
-    <p>Typical symptoms, warning signs, and when swelling is dangerous.</p>
+    <p>The most common warning signs and the red flags that require care.</p>
   </a>
 
-  <a class="condition-card" href="/Angioedema/conditions/diagnosis/">
+  <a class="condition-card" href="/conditions/diagnosis/">
     <h2>Diagnosis</h2>
-    <p>How angioedema is diagnosed, common tests and what to expect.</p>
+    <p>How doctors evaluate angioedema and what the tests usually involve.</p>
   </a>
 
-  <a class="condition-card" href="/Angioedema/conditions/treatment/">
-    <h2>Treatment Options</h2>
-    <p>Medication, emergency treatment and long-term management options.</p>
+  <a class="condition-card" href="/conditions/treatment/">
+    <h2>Treatment</h2>
+    <p>Emergency measures, medicines, and everyday management tips.</p>
   </a>
 
 </div>
