@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}">
+  {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{ range .Site.Params.custom_css }}
+  <link rel="stylesheet" href="{{ . | absURL }}">
+  {{ end }}
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+  {{ block "header" . }}{{ end }}
+
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  {{ block "footer" . }}{{ end }}
+
+  {{ if .Site.Params.custom_js }}
+  {{ range .Site.Params.custom_js }}
+  <script src="{{ . | absURL }}"></script>
+  {{ end }}
+  {{ end }}
+</body>
+</html>

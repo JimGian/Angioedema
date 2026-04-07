@@ -1,0 +1,22 @@
+<nav class="site-navigation">
+  <div class="nav-container">
+    <a href="{{ site.Home.RelPermalink }}" class="site-logo">
+      {{ with site.Params.site_logo }}
+        <img src="{{ . | absURL }}" alt="{{ site.Title }}" width="40" height="40">
+      {{ end }}
+      <span class="site-title">{{ site.Title }}</span>
+    </a>
+
+    {{ if site.Menus.main }}
+    <ul class="nav-menu">
+      {{ range site.Menus.main }}
+      <li class="nav-item">
+        <a href="{{ .URL | absURL }}" class="nav-link {{ if $.IsMenuCurrent "main" . }}active{{ end }}">
+          {{ .Name }}
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+  </div>
+</nav>

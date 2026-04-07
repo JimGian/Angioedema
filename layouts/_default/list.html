@@ -1,0 +1,29 @@
+{{ define "header" }}{{ partial "header.html" . }}{{ end }}
+
+{{ define "main" }}
+<section class="list-page">
+  <header class="page-header">
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ with .Description }}
+    <p class="page-description">{{ . }}</p>
+    {{ end }}
+  </header>
+
+  <div class="content-list">
+    {{ range .Pages }}
+    <article class="list-item">
+      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      {{ if .Params.featured_image }}
+      <div class="list-item-image">
+        <img src="{{ .Params.featured_image | absURL }}" alt="{{ .Title }}">
+      </div>
+      {{ end }}
+      <p>{{ .Summary | plainify | truncate 150 }}</p>
+      <a href="{{ .Permalink }}" class="read-more">Read more</a>
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ define "footer" }}{{ partial "footer.html" . }}{{ end }}

@@ -1,0 +1,14 @@
+{{ define "header" }}{{ partial "header.html" . }}{{ end }}
+
+{{ define "main" }}
+  {{ if .Params.featured_image }}
+  <section class="page-hero-image">
+    <img src="{{ .Params.featured_image | absURL }}" alt="{{ .Title }}">
+  </section>
+  {{ end }}
+  <section class="page-home-content">
+    {{ .Content }}
+  </section>
+{{ end }}
+
+{{ define "footer" }}{{ partial "footer.html" . }}{{ end }}

@@ -1,0 +1,11 @@
+{{ define "header" }}{{ partial "header.html" . }}{{ end }}
+
+{{ define "main" }}
+<section class="error-page">
+  <h1 class="page-title">Page Not Found</h1>
+  <p>Sorry, the page you're looking for doesn't exist.</p>
+  <a href="{{ site.Home.RelPermalink }}" class="btn">Go Home</a>
+</section>
+{{ end }}
+
+{{ define "footer" }}{{ partial "footer.html" . }}{{ end }}
