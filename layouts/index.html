@@ -1,53 +1,83 @@
 {{ define "header" }}{{ partial "header.html" . }}{{ end }}
 
 {{ define "main" }}
-  {{ if .Params.featured_image }}
-  <section class="page-hero-image">
-    <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}">
-  </section>
-  {{ end }}
+<div class="medical-notice">
+  <span class="notice-icon">⚠️</span>
+  This site provides general information only and is not a substitute for professional medical advice, diagnosis, or treatment.
+  <a href="{{ "about/" | relURL }}">Learn more</a>
+</div>
 
-  <section class="page-home-content">
-    <section class="hero-intro">
-      <div class="hero-copy">
-        <p class="eyebrow">Trusted patient education</p>
-        <h1>Understand angioedema with calm, clear guidance</h1>
-        <p>Find the most important information fast: symptoms, diagnosis, treatment, and when to seek help.</p>
-        <div class="hero-actions">
-          <a class="btn" href="{{ "conditions/" | relURL }}">Browse Articles</a>
-          <a class="btn btn-muted" href="{{ "about/" | relURL }}">About this site</a>
-        </div>
-      </div>
-    </section>
+<section class="hero-intro">
+  <div class="hero-copy">
+    <p class="eyebrow">Patient Education Resource</p>
+    <h1>Understanding Angioedema</h1>
+    <p>Clear, reliable information about angioedema — from causes and symptoms to diagnosis and treatment options. Designed for patients and caregivers.</p>
+    <div class="hero-actions">
+      <a class="btn" href="{{ "conditions/" | relURL }}">Explore Topics</a>
+      <a class="btn btn-muted" href="{{ "conditions/symptoms/" | relURL }}">Emergency Signs</a>
+    </div>
+  </div>
+</section>
 
-    <section class="feature-strip">
-      <article class="feature-card">
-        <h2>Easy to scan</h2>
-        <p>Clear sections and simple language help you get answers quickly.</p>
-      </article>
-      <article class="feature-card">
-        <h2>Helpful visuals</h2>
-        <p>Interactive details and responsive layout make learning smoother on every device.</p>
-      </article>
-      <article class="feature-card">
-        <h2>Focused content</h2>
-        <p>Only the essential information is shown, without medical clutter.</p>
-      </article>
-    </section>
+<section class="quick-facts">
+  <div class="fact-card fact-urgent">
+    <div class="fact-icon">🔴</div>
+    <h3>Recognise the danger</h3>
+    <p>Sudden swelling of the face, lips, tongue, or throat can be life-threatening. If breathing is affected, call emergency services immediately.</p>
+  </div>
+  <div class="fact-card">
+    <div class="fact-icon">💊</div>
+    <h3>It is treatable</h3>
+    <p>Most forms of angioedema respond well to medication. Early diagnosis and identifying the trigger are key to preventing recurrence.</p>
+  </div>
+  <div class="fact-card">
+    <div class="fact-icon">🔬</div>
+    <h3>It can be identified</h3>
+    <p>Blood tests, allergy panels, and a detailed medical history help doctors confirm the type and underlying cause of angioedema.</p>
+  </div>
+</section>
 
-    <section class="topics-grid">
-      <a href="{{ "conditions/angioedema/" | relURL }}">🧬 <strong>What is Angioedema?</strong><br>Learn the basics</a>
-      <a href="{{ "conditions/symptoms/" | relURL }}">📋 <strong>Symptoms</strong><br>Know the signs</a>
-      <a href="{{ "conditions/diagnosis/" | relURL }}">🔬 <strong>Diagnosis</strong><br>How it's confirmed</a>
-      <a href="{{ "conditions/treatment/" | relURL }}">💊 <strong>Treatment</strong><br>What helps most</a>
-    </section>
+<section class="section-divider">
+  <h2 class="section-heading">Browse by topic</h2>
+  <p class="section-subheading">Each article is written to be short, accurate, and easy to follow.</p>
+</section>
 
-    <section class="callout-panel">
-      <h2>Focused, modern health guidance</h2>
-      <p>This site is designed to help you understand angioedema without unnecessary detail.</p>
-      <a class="btn" href="{{ "contact/" | relURL }}">Ask a question</a>
-    </section>
-  </section>
+<section class="topics-grid">
+  <a href="{{ "conditions/angioedema/" | relURL }}" class="topic-card">
+    <span class="topic-icon">🧬</span>
+    <div>
+      <strong>What is Angioedema?</strong>
+      <span>Definition, types, and causes</span>
+    </div>
+  </a>
+  <a href="{{ "conditions/symptoms/" | relURL }}" class="topic-card">
+    <span class="topic-icon">📋</span>
+    <div>
+      <strong>Symptoms</strong>
+      <span>Warning signs and red flags</span>
+    </div>
+  </a>
+  <a href="{{ "conditions/diagnosis/" | relURL }}" class="topic-card">
+    <span class="topic-icon">🔬</span>
+    <div>
+      <strong>Diagnosis</strong>
+      <span>Tests and clinical evaluation</span>
+    </div>
+  </a>
+  <a href="{{ "conditions/treatment/" | relURL }}" class="topic-card">
+    <span class="topic-icon">💊</span>
+    <div>
+      <strong>Treatment</strong>
+      <span>Medicines and long-term management</span>
+    </div>
+  </a>
+</section>
+
+<section class="callout-panel">
+  <h2>Have a question?</h2>
+  <p>If you cannot find what you are looking for, send us a message and we will point you to the right information.</p>
+  <a class="btn" href="{{ "contact/" | relURL }}">Get in touch</a>
+</section>
 {{ end }}
 
 {{ define "footer" }}{{ partial "footer.html" . }}{{ end }}

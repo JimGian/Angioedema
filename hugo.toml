@@ -5,7 +5,7 @@ title = "Angioedema Info"
 
 [params]
   custom_css = ["css/custom.css"]
-  site_logo = "images/nna.png"
+  site_logo = "images/nna1.png"
   text_color = "black"
 
   [params.hero]

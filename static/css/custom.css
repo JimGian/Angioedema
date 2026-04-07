@@ -1,3 +1,169 @@
+/* MEDICAL NOTICE BANNER */
+.medical-notice {
+  background: #fff8e1;
+  border-bottom: 2px solid #f0b429;
+  color: #7a4f00;
+  font-size: 0.88rem;
+  font-weight: 500;
+  padding: 0.65rem 1.5rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.medical-notice .notice-icon {
+  margin-right: 0.4rem;
+}
+
+.medical-notice a {
+  color: #7a4f00;
+  font-weight: 700;
+  border-bottom: 1px solid currentColor;
+  margin-left: 0.4rem;
+}
+
+/* QUICK FACTS */
+.quick-facts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin: 2rem auto;
+  max-width: 980px;
+}
+
+@media (min-width: 860px) {
+  .quick-facts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.fact-card {
+  background: #ffffff;
+  border: 1.5px solid #dbeafe;
+  border-radius: 20px;
+  padding: 1.75rem 1.5rem;
+  box-shadow: 0 8px 24px rgba(20, 40, 90, 0.07);
+}
+
+.fact-card.fact-urgent {
+  border-color: #fca5a5;
+  background: #fff5f5;
+}
+
+.fact-icon {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.fact-card h3 {
+  font-size: 1.05rem;
+  color: #1a3f78;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.fact-card p {
+  font-size: 0.95rem;
+  color: #4b5e80;
+  margin: 0;
+}
+
+/* SECTION DIVIDER */
+.section-divider {
+  text-align: center;
+  margin: 2.5rem auto 0.5rem;
+}
+
+.section-heading {
+  font-size: 1.7rem;
+  color: #1a3f78;
+}
+
+.section-subheading {
+  color: #5b6b8d;
+  font-size: 1rem;
+  margin-top: 0.25rem;
+}
+
+/* TOPIC CARDS */
+.topic-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.4rem 1.5rem;
+}
+
+.topic-card .topic-icon {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.topic-card div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.topic-card strong {
+  font-size: 1rem;
+  color: #1a3f78;
+}
+
+.topic-card span {
+  font-size: 0.88rem;
+  color: #5b6b8d;
+  font-weight: 400;
+}
+
+/* DISCLAIMER BOX */
+.disclaimer-box {
+  background: #fff8e1;
+  border: 2px solid #f0b429;
+  border-radius: 18px;
+  padding: 2rem 1.75rem;
+  margin: 2.5rem 0;
+}
+
+.disclaimer-box h2 {
+  color: #7a4f00;
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.disclaimer-box h2::after {
+  background: #f0b429;
+}
+
+.disclaimer-box p {
+  color: #5a3e00;
+  font-size: 0.95rem;
+}
+
+/* CONTACT INFO CARDS */
+.contact-info-card {
+  background: #ffffff;
+  border: 1.5px solid #dbeafe;
+  border-radius: 18px;
+  padding: 1.75rem;
+  box-shadow: 0 8px 20px rgba(20, 40, 90, 0.06);
+}
+
+.contact-info-icon {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.contact-note {
+  font-size: 0.85rem;
+  color: #8898b0;
+  margin-top: 0.25rem;
+}
+
+.social-intro {
+  color: #5b6b8d;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
 /* RESET & BASE */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -483,16 +649,34 @@ blockquote strong {
 .social-card {
   display: inline-flex;
   align-items: center;
-  gap: 0.6rem;
-  padding: 0.85rem 1.4rem;
+  gap: 0.85rem;
+  padding: 1rem 1.4rem;
   background: #f0f6ff;
   border: 1.5px solid #c5d8ff;
   border-bottom: none;
-  border-radius: 12px;
+  border-radius: 14px;
   color: #1a4f9c;
   font-weight: 600;
   font-size: 0.95rem;
   transition: all 0.2s ease;
+  min-width: 180px;
+}
+
+.social-card div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.social-card strong {
+  font-size: 0.95rem;
+  color: #1a3f78;
+}
+
+.social-card span {
+  font-size: 0.8rem;
+  color: #6b7f9e;
+  font-weight: 400;
 }
 
 .social-card:hover {
