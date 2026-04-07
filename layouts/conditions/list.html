@@ -1,0 +1,29 @@
+{{ define "header" }}{{ partial "header.html" . }}{{ end }}
+
+{{ define "main" }}
+  {{ if .Params.featured_image }}
+  <section class="page-hero-image">
+    <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}">
+  </section>
+  {{ end }}
+
+  <section class="list-page">
+    <header class="page-header">
+      <h1 class="page-title">{{ .Title }}</h1>
+      {{ with .Description }}<p class="page-description">{{ . }}</p>{{ end }}
+    </header>
+
+    {{ with .Content }}<div class="page-content">{{ . }}</div>{{ end }}
+
+    <div class="condition-grid">
+      {{ range .Pages }}
+      <a class="condition-card" href="{{ .Permalink }}">
+        <h2>{{ .Title }}</h2>
+        <p>{{ .Summary | plainify | truncate 120 }}</p>
+      </a>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
+
+{{ define "footer" }}{{ partial "footer.html" . }}{{ end }}

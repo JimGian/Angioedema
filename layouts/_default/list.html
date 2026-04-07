@@ -15,7 +15,7 @@
       <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
       {{ if .Params.featured_image }}
       <div class="list-item-image">
-        <img src="{{ .Params.featured_image | absURL }}" alt="{{ .Title }}">
+        <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}">
       </div>
       {{ end }}
       <p>{{ .Summary | plainify | truncate 150 }}</p>
