@@ -2,12 +2,17 @@
   <div class="nav-container">
     <a href="{{ site.Home.RelPermalink }}" class="site-logo">
       {{ with site.Params.site_logo }}
-        <img src="{{ . | absURL }}" alt="{{ site.Title }}" width="40" height="40">
+        <img src="{{ . | absURL }}" alt="{{ site.Title }}" width="36" height="36">
       {{ end }}
       <span class="site-title">{{ site.Title }}</span>
     </a>
 
     {{ if site.Menus.main }}
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
     <ul class="nav-menu">
       {{ range site.Menus.main }}
       <li class="nav-item">
@@ -20,3 +25,17 @@
     {{ end }}
   </div>
 </nav>
+
+<script>
+  (function() {
+    var toggle = document.querySelector('.nav-toggle');
+    var menu = document.querySelector('.nav-menu');
+    if (toggle && menu) {
+      toggle.addEventListener('click', function() {
+        var open = menu.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.classList.toggle('open', open);
+      });
+    }
+  })();
+</script>

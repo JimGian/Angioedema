@@ -11,6 +11,25 @@ draft: false
 
 <div class="about-content">
 
+  <h2>Meet the author</h2>
+
+  <div class="author-card">
+    <div class="author-avatar">👨‍⚕️</div>
+    <div class="author-info">
+      <h3>Dr. [Your Full Name]</h3>
+      <p class="author-title">Specialist in Allergy &amp; Clinical Immunology</p>
+      <p class="author-affiliation">📍 [Hospital / University Name] — [City, Country]</p>
+      <p>Dr. [Name] has been practicing medicine for over [X] years, with a clinical focus on allergic diseases and immunological disorders including hereditary, allergic, and idiopathic angioedema. [He/She] created this resource to provide patients and caregivers with clear, evidence-based information in plain language.</p>
+    </div>
+  </div>
+
+  <div class="credential-badges">
+    <span class="badge">🎓 MD, [University Name]</span>
+    <span class="badge">🏥 [Board Certification]</span>
+    <span class="badge">🔬 [Years] Years of Practice</span>
+    <span class="badge">📄 [X] Peer-reviewed Publications</span>
+  </div>
+
   <h2>Our mission</h2>
   <p>Angioedema Info was created to fill a gap in accessible, plain-language medical education. We translate complex clinical information into short, accurate articles that focus on what matters most to patients and families dealing with angioedema.</p>
 
